@@ -15,9 +15,9 @@ echo 2. Laravel [Latest version]
 echo 3. Exit
 echo.
 echo.
-echo Create Framework Project
-echo a. Command Prompt
-echo b. Get Composer
+echo Component you need
+echo a. Get Composer
+echo b. Get Xampp
 echo.
 set/p "input=Your choice > ";
 
@@ -25,6 +25,16 @@ if %input%==1 goto :codeigniter
 if %input%==2 goto :laravel
 if %input%==3 goto exit
 
+if %input%==a goto :getComposer
+if %input%==b goto :getXampp
+
+:getComposer
+start https://getcomposer.org/download/
+EXIT /B 0
+
+:getXampp
+start https://www.apachefriends.org/download.html
+EXIT /B 0
 :codeigniter
 cls
 echo.
