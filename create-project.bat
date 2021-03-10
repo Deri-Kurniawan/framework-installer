@@ -57,13 +57,13 @@ echo.
 echo if you have vs code, we will automaticly open this project files on vs code!
 echo We will automaticly open your browser on http://localhost:8080
 echo And We will automaticly running php spark serve
-echo Are you sure to create CodeIgniter 4 project?
 echo.
 echo Note : if you have problem about server, try to uncomment extension=intl
 echo on php.ini file from your xampp or mampp or wampp or lampp.
 echo.
+echo Are you sure to create CodeIgniter 4 project?
 set/p "input= Choose [y/n] > "
-if %input%==y (start cmd /k "cd %directory%/ && composer create-project codeigniter4/appstarter %folder-name% -v && cd %directory%/%folder-name% && code . && start localhost:8080 && php spark serve") else (exit)
+if %input%==y (start cmd /k "cd %directory%/ && composer create-project codeigniter4/appstarter %folder-name% -v && cd %directory%/%folder-name% && code . && start http://localhost:8080 && php spark serve") else (exit)
 exit
 EXIT /B 0
 
@@ -97,14 +97,14 @@ echo "Folder Name : %folder-name%"
 echo.
 
 echo if you have vs code, we will automaticly open this project files on vs code!
-echo We will automaticly open your browser on http://localhost:8080
+echo We will automaticly open your browser on http://localhost:8000
 echo And We will automaticly running php spark serve
-echo Are you sure to create Laravel project?
 echo.
 echo Note : if you have problem about server, try to uncomment extension=intl
 echo on php.ini file from your xampp or mampp or wampp or lampp.
 echo.
+echo Are you sure to create Laravel project?
 set/p "input= Choose [y/n] > "
-if %input%==y (start cmd /k "cd %directory%/ && composer create-project laravel/laravel %folder-name% -v && cd %directory%/%folder-name% && code . && start localhost:8000 && php artisan serve") else (exit)
+if %input%==y (start cmd /k "cd %directory%/ && composer create-project laravel/laravel %folder-name% -v && cd %directory%/%folder-name% && code . && start http://localhost:8000 && php artisan serve") else (exit)
 exit
 EXIT /B 0
