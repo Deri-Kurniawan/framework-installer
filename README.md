@@ -1,4 +1,4 @@
-# web-framework-installer
+# Web Framework Installer
 Batch file windows script for create web framework more easier and you don't need to remember command syntax.
 
 # Avaible framework
