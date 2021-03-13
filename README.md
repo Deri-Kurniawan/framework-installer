@@ -12,7 +12,7 @@ Batch file windows script for create web framework more easier and you don't nee
 3. composer installed on your computer.
 
 # How it works?
-I created a script to create a web framework that the user chooses to install by itself, if you have Visual Studio code installed, the script will immediately run it by opening the framework file that the user has created, after that the script will also run the php server, then the script will open the user's default browser, then it will run the localhost web that the user has created.
+I created a script to create a web framework that the user chooses to install by itself, if user have Visual Studio code installed, the script will immediately run it by opening the framework file that the user has created, after that the script will also run the php server, then the script will open the user's default browser, then it will run the localhost web that the user has created.
 
 # It's Safe?
 100% safe
